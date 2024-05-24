@@ -25,4 +25,7 @@ def plot():
     return flask.jsonify(response)
 
 if __name__ == "__main__":
-    server.run()
+    server.run(
+        host = "0.0.0.0",
+        port = os.environ["PORT"],
+    )
