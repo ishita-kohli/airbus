@@ -20,9 +20,7 @@ import FeaturedTourList from "../Component/Featured-tour/FeaturedTourList";
 import Testmonial from "../Component/Testmonial/Testmonial";
 import Newsletter from "../shared/Newsletter";
 import SeniorAdventureSection from "../Component/SeniorAdventureSections/SeniorAdventureSection";
-import help from '../Component/help'
-
-
+import help from "../Component/help";
 
 const Home = () => {
   return (
@@ -36,13 +34,14 @@ const Home = () => {
                   <Subtitle Subtitle={"Navigate safely with SkyVoyager"} />
                 </div>
                 <h2>
-                Your Gateway to the World Above:<br />
+                  Your Gateway to the World Above:
+                  <br />
                   <span className="highlight">Navigate!</span>
                 </h2>
                 <p>
-                  Skyvoyager ensuring safe and efficient flight navigation is paramount.
-                   With the goal of minimizing human errors and enhancing automated navigation 
-                   mechanisms
+                  Skyvoyager ensuring safe and efficient flight navigation is
+                  paramount. With the goal of minimizing human errors and
+                  enhancing automated navigation mechanisms
                 </p>
               </div>
             </Col>
@@ -57,7 +56,7 @@ const Home = () => {
                 <video src={heroVideo} alt="" controls />
               </div>
             </Col> */}
-             <Col lg="2">
+            <Col lg="2">
               <div className="hero__img-box mt-5">
                 <img src={Img} alt="" />
               </div>
@@ -84,7 +83,6 @@ const Home = () => {
           </Row>
         </Container>
       </section> */}
-
       {/* featured tour section start */}
       {/* <section className="bordered-section">
         <Container>
@@ -112,8 +110,7 @@ const Home = () => {
         </Container>
       </section>
       {/* Tailored support for senior adventurers section end */}
-
-       {/* New section: Why Book With Us */}
+      {/* New section: Why Book With Us */}
       {/* <section className="bordered-section">
         <Container>
           <Row>
@@ -126,36 +123,36 @@ const Home = () => {
               <div className="why-book-item">
                 <img src={image1} alt="Image 1" />
                 {/* Optional: Add text or caption */}
-                {/* <p>Reason 1: Lorem ipsum dolor sit amet.</p> */}
-              {/* </div>
+      {/* <p>Reason 1: Lorem ipsum dolor sit amet.</p> */}
+      {/* </div>
             </Col> */}
-            {/* <Col lg="6" className="d-flex justify-content-center">
+      {/* <Col lg="6" className="d-flex justify-content-center">
               <div className="why-book-item">
                 <img src={image2} alt="Image 2" />
                 {/* Optional: Add text or caption */}
-                {/* <p>Reason 2: Consectetur adipiscing elit.</p> */}
-              {/* </div> */}
-          {/* //   </Col> */}
-          {/* // </Row> */} */
-          {/* // <Row className="mb-4">
+      {/* <p>Reason 2: Consectetur adipiscing elit.</p> */}
+      {/* </div> */}
+      {/* //   </Col> */}
+      {/* // </Row> */} */
+      {/* // <Row className="mb-4">
           //   <Col lg="6" className="d-flex justify-content-center">
           //     <div className="why-book-item">
           //       <img src={image3} alt="Image 3" /> */}
-                {/* Optional: Add text or caption */}
-                {/* <p>Reason 3: Sed do eiusmod tempor incididunt.</p> */}
-              {/* </div>
+      {/* Optional: Add text or caption */}
+      {/* <p>Reason 3: Sed do eiusmod tempor incididunt.</p> */}
+      {/* </div>
             </Col>
             <Col lg="6" className="d-flex justify-content-center">
               <div className="why-book-item">
                 <img src={image4} alt="Image 4" /> */}
-                {/* Optional: Add text or caption */}
-                {/* <p>Reason 4: Ut labore et dolore magna aliqua.</p> */}
-              {/* </div>
+      {/* Optional: Add text or caption */}
+      {/* <p>Reason 4: Ut labore et dolore magna aliqua.</p> */}
+      {/* </div>
             </Col>
           </Row>
         </Container>
-      // </section> */} */
-
+      // </section> */}{" "}
+      */
       {/* experience section start */}
       <section className="bordered-section">
         <Container>
@@ -164,10 +161,10 @@ const Home = () => {
               <div className="experience__content">
                 <Subtitle Subtitle={"EXPERIENCE"} />
                 <h3>
-                Trust Our Expertise for Safe and Efficient Flight Navigation
+                  Trust Our Expertise for Safe and Efficient Flight Navigation
                 </h3>
                 <p>
-                Stay Updated with the Latest in Flight Navigation Technology
+                  Stay Updated with the Latest in Flight Navigation Technology
                 </p>
               </div>
 
@@ -195,7 +192,6 @@ const Home = () => {
         </Container>
       </section>
       {/* experience section end */}
-
       {/* testimonial section start */}
       <section className="bordered-section">
         <Container>
@@ -212,12 +208,28 @@ const Home = () => {
       </section>
       {/* testimonial section end */}
       <Newsletter />
-
       {/* Floating Help Button */}
-      <div style={{ position: "fixed", bottom: "20px", right: "20px", zIndex: "999" }}>
-          <button style={{ padding: "10px 20px", borderRadius: "10%", backgroundColor: "orange", color: "white", border: "none", cursor: "pointer" }}>Help</button>
+      <div
+        style={{
+          position: "fixed",
+          bottom: "20px",
+          right: "20px",
+          zIndex: "999",
+        }}
+      >
+        <button
+          style={{
+            padding: "10px 20px",
+            borderRadius: "10%",
+            backgroundColor: "orange",
+            color: "white",
+            border: "none",
+            cursor: "pointer",
+          }}
+        >
+          Help
+        </button>
         <Link></Link>
-       
       </div>
     </>
   );

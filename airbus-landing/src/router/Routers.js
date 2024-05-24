@@ -1,13 +1,13 @@
 import React from "react";
-import Home from "./../pages/Home";
-import Tours from "./../pages/Tours";
+import { Navigate, Route, Routes } from "react-router-dom";
+import ThankYou from "../pages/ThankYou";
 import About from "./../pages/About";
-import ToursDetails from "./../pages/TourDetails";
+import Home from "./../pages/Home";
 import Login from "./../pages/Login";
 import Register from "./../pages/Register";
 import SearchResultList from "./../pages/SearchResultList";
-import { Routes, Route, Navigate } from "react-router-dom";
-import ThankYou from "../pages/ThankYou";
+import ToursDetails from "./../pages/TourDetails";
+import Tours from "./../pages/Tours";
 const Routers = () => {
   return (
     <Routes>
