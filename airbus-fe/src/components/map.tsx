@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { Suspense } from "react";
 
+const BACKEND_URI = process.env.BACKEND_URI!;
+
 export function FlightMap({
   departure,
   arrival,
@@ -29,18 +31,20 @@ export async function FlightMapImage({
   arrival: string;
 }) {
   const imageURI = await fetch(
-    `http://127.0.0.1:5000/plot?origin=${departure}&dest=${arrival}`,
+    `${BACKEND_URI}/plot?origin=${departure}&dest=${arrival}`
   )
     .then((res) => res.json())
     .then((data) => {
       if (data.uri === "error") {
         return "error";
       }
-      return `http://127.0.0.1:5000/${data.uri}`;
+      return `${BACKEND_URI}/${data.uri}`;
     })
     .catch((err) => {
       return "error";
     });
+
+  console.log(imageURI);
 
   if (imageURI === "error") {
     return <div>Failed to load image</div>;
