@@ -10,9 +10,6 @@ server.root_path = "/Users/hardik/Developer/ik/airbus/airbus-be"
 print(server.root_path)
 #os.path.join(server.root_path, "/flight/SAN-JFK.jpeg")
 
-@server.route('/')
-def main():
-    return flask.render_template("optimal_flight_path_calculator.html")
 
 @server.route('/plot', methods=['GET'])
 def plot():
