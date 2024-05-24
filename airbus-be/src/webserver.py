@@ -1,9 +1,10 @@
 import flask
 import os
 import make_path_function
-from flask_cors import CORS, cross_origin
+from flask_cors import CORS
 
 server = flask.Flask(__name__)
+server.root_path = "./"
 cors = CORS(server)
 server.config['CORS_HEADERS'] = 'Content-Type'
 
