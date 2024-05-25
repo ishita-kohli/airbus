@@ -2,7 +2,6 @@ import csv
 import requests
 from tqdm import tqdm
 
-# Define NOAA API Parameters (replace with your credentials)
 
 base_url = "https://api.weather.gov/gridpoints/"
 api_key = "1234567890"  # Replace with your NOAA API key
